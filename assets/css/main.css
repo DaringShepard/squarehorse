@@ -2239,13 +2239,13 @@ input, select, textarea {
 		margin-top: 5em;
 	}
 
-/* Highlights */
+/* News */
 
-	#highlights .highlight {
+	#news .highlight {
 		text-align: center;
 	}
 
-		#highlights .highlight h3 {
+		#news .highlight h3 {
 			color: #32b7d2;
 			margin: 0 0 0.75em 0;
 			font-size: 1.15em;
@@ -2523,9 +2523,9 @@ input, select, textarea {
 				width: auto;
 			}
 
-		/* Highlights */
+		/* News */
 
-			#highlights .highlight {
+			#news .highlight {
 				max-width: 40em;
 				margin-left: auto;
 				margin-right: auto;
