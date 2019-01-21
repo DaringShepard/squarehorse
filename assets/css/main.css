@@ -2028,6 +2028,22 @@ input, select, textarea {
 			.wrapper.style3 .image {
 				border: solid 10px #fff;
 			}
+			
+		.wrapper.style4 {
+			background: #1d1d1d url("images/overlay.png");
+			color: #eee;
+			color: rgba(255, 255, 255, 0.75);
+		}
+
+			.wrapper.style4 .title {
+				background: #1d1d1d url("images/overlay.png");
+				color: #ffffff;
+                text-decoration: none;
+			}
+
+			.wrapper.style4 h1, .wrapper.style4 h2, .wrapper.style4 h3, .wrapper.style4 h4, .wrapper.style4 h5, .wrapper.style4 h6, .wrapper.style4 strong, .wrapper.style4 b, .wrapper.style4 a {
+				color: #ffffff;
+			}
 
 /* Page Wrapper */
 
