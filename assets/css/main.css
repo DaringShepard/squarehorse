@@ -1942,6 +1942,7 @@ input, select, textarea {
 	.wrapper {
 		position: relative;
 		padding: 6em 0 9em 0;
+        text-decoration: none;
 	}
 
 		.wrapper .title {
@@ -1961,6 +1962,7 @@ input, select, textarea {
 			margin-bottom: -3.25em;
 			margin-left: -12.5em;
 			padding-top: 0.5em;
+            text-decoration: none;
 		}
 
 			.wrapper .title:before {
@@ -1971,6 +1973,7 @@ input, select, textarea {
 				width: 35px;
 				height: 38px;
 				background: url("images/shadow.png");
+                text-decoration: none;
 			}
 
 			.wrapper .title:after {
@@ -1985,6 +1988,7 @@ input, select, textarea {
 				width: 35px;
 				height: 38px;
 				background: url("images/shadow.png");
+                text-decoration: none;
 			}
 
 		.wrapper.style1 {
@@ -1996,6 +2000,7 @@ input, select, textarea {
 			.wrapper.style1 .title {
 				background: #1d1d1d url("images/overlay.png");
 				color: #ffffff;
+                text-decoration: none;
 			}
 
 			.wrapper.style1 h1, .wrapper.style1 h2, .wrapper.style1 h3, .wrapper.style1 h4, .wrapper.style1 h5, .wrapper.style1 h6, .wrapper.style1 strong, .wrapper.style1 b, .wrapper.style1 a {
@@ -2051,7 +2056,7 @@ input, select, textarea {
 		background: url('../../images/HollySigned.png') fixed, url('../../images/BackgroundMLCVersion2Pones1.png') fixed, url('../../images/BackgroundMLCVersion2Pones2Red.png') fixed, url('../../images/BackgroundMLCVersion2FireWorks.png') fixed;
 		background-size: auto, 25.3%, 20.7%, 100%;
 	    background-repeat: no-repeat;
-	    background-position: 100% 55%, 0% 50%, right top, right top;
+	    background-position: 100% 100%, 0% 100%, 100% 0%, 100% 0%;
 	    border-top: none;
 		padding: 0;
         background-color: #072847;
@@ -2063,12 +2068,12 @@ input, select, textarea {
 			top: 0;
 			left: 0;
 			width: 100%;
-			height: 100%;
+			height:100%;
 			background: url("images/overlay.png");
 		}
 
 		.homepage #header {
-			height: 35em;
+			height: 100vh;
 		}
 
 /* Logo */
@@ -2097,6 +2102,24 @@ input, select, textarea {
 			letter-spacing: 0.2em;
 			font-size: 0.9em;
 		}
+        
+        /* Subtle grow effect on hover  */
+    
+        .logo img {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        }
+        .logo img:hover, .logo img:focus, .logo img:active {
+        -webkit-transform: scale(1.05) rotate(0deg);
+        transform: scale(1.05) rotate(0deg);
+        }
 
 /* Top // Main Nav */
 
@@ -2121,8 +2144,9 @@ input, select, textarea {
 			background-color: rgba(44, 50, 63, 0.925);
 			box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
 			padding: 0 1em 0 1em;
+            /* Small tweak to do Windows 7 / IOS style blur behind the nav bar's gray, makes it look a little nicer. Save for enabling when more browsers than just Safari finally decide to support it well. 
             -webkit-backdrop-filter: blur(5px);
-            backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px); */
 		}
 
 			#nav > ul > li {
@@ -2257,6 +2281,11 @@ input, select, textarea {
 
 /* News */
 
+    #news {
+        padding-bottom: 8em;
+        text-align: center;
+    }
+
 	#news .highlight {
 		text-align: center;
 	}
@@ -2268,7 +2297,40 @@ input, select, textarea {
 			letter-spacing: 0.05em;
 		}
 
+    #news p.style1 {
+			font-size: 1.5em;
+			letter-spacing: 0.075em;
+		}
+
+		#news p.style2 {
+			font-weight: 700;
+			color: #fff;
+			border-radius: 0.35em;
+			box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
+			font-size: 2.75em;
+			letter-spacing: 0.075em;
+			line-height: 1.35em;
+			padding: 1em 0 1em 0;
+			margin-bottom: 1em;
+		}
+
+			#news p.style2 a {
+				color: inherit;
+				text-decoration: none;
+			}
+
+		#news p.style3 {
+			font-size: 1.1em;
+			width: 48em;
+			margin: 0 auto;
+		}
+
 /* Main */
+    
+    #main {
+        padding-bottom: 8em;
+		text-align: center;
+    }
 
 /* Footer */
 
@@ -2610,6 +2672,9 @@ input, select, textarea {
 					left: 0;
 					width: 60px;
 					height: 44px;
+                    /* Small tweak to do Windows 7 / IOS style blur behind the nav bar gray, makes it look a little nicer. Save for enabling when more browsers than just Safari finally decide to support it well. 
+                    -webkit-backdrop-filter: blur(5px);
+                    backdrop-filter: blur(5px); */
 				}
 
 					#titleBar .toggle:before {
@@ -2869,7 +2934,7 @@ input, select, textarea {
 			}
 
 				.homepage #header {
-					height: 20em;
+					height: 100vh;
 				}
 
 		/* Logo */
