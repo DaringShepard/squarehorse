@@ -2011,6 +2011,12 @@ input, select, textarea {
 			background: #333333;
 		}
 
+			 hr.rules { 
+			  margin: 0.5em;
+			  border-width: 2px;
+			  border-color: gray;
+			} 
+			
 			.wrapper.style2 .title {
 				background: #333333;
 				color: #ffffff;
